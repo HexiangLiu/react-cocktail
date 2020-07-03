@@ -1,0 +1,29 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-grey);
+  padding: 2rem 0;
+  border-bottom: 2px solid var(--color-dark);
+  font-weight: 600;
+
+  &__items {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 2rem;
+    list-style: none;
+  }
+
+  &__link:visited,
+  &__link:link {
+    text-decoration: none;
+    color: var(--color-dark);
+  }
+}

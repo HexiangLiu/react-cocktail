@@ -1,3 +1,15 @@
+:root {
+  --color-grey: #eee;
+  --color-dark: #333333;
+  --color-green: #a3f7bf;
+  --color-red: #ee4540;
+  --color-red-1: #c72c41;
+  --color-red-2: #801336;
+
+  --font-main: 'Lato', sans-serif;
+  --font-display: 'Bangers', cursive;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -9,4 +21,29 @@ html {
 
 body {
   box-sizing: border-box;
+  font-size: 1.5rem;
+  color: var(--color-dark);
+  font-family: var(--font-main);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.section {
+  padding: 12rem 8rem;
+
+  &__title {
+    text-transform: capitalize;
+    font-family: var(--font-display);
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    color: transparent;
+    background-image: linear-gradient(
+      to right bottom,
+      var(--color-red),
+      var(--color-red-2)
+    );
+    background-clip: text;
+    margin-bottom: 3rem;
+  }
 }
