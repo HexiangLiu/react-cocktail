@@ -4,10 +4,12 @@
   justify-content: space-around;
   font-size: 2rem;
   position: fixed;
+  z-index: 3;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--color-grey);
+  background-color: rgba(#eeeeee, 0.8);
+
   padding: 2rem 0;
   border-bottom: 2px solid var(--color-dark);
   font-weight: 600;

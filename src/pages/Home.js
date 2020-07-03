@@ -9,7 +9,7 @@ import CocktailList from '../components/CocktailList';
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
-  const [searchTerm, setSearchTerm] = useState('d');
+  const [searchTerm, setSearchTerm] = useState('a');
   const [cocktails, setCocktails] = useState([]);
 
   useEffect(() => {
@@ -49,7 +49,7 @@ const Home = () => {
   }, [searchTerm]);
 
   return (
-    <main className="section section-home">
+    <main className="section">
       <SearchForm setSearchTerm={setSearchTerm} />
       <CocktailList loading={loading} cocktails={cocktails} />
     </main>

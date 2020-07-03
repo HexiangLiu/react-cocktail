@@ -1,0 +1,26 @@
+.singleCocktail {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  &__image {
+    width: 30%;
+    border-radius: 5px;
+  }
+
+  &__detail {
+    text-transform: capitalize;
+    display: grid;
+    gap: 2rem;
+  }
+
+  &__btn {
+    justify-self: start;
+    align-self: center;
+  }
+
+  &__ingredient {
+    margin-right: 1rem;
+  }
+}
