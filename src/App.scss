@@ -1,13 +1,15 @@
 :root {
   --color-grey: #eee;
   --color-dark: #333333;
-  --color-green: #a3f7bf;
+  --color-green: #658525;
   --color-red: #ee4540;
   --color-red-1: #c72c41;
   --color-red-2: #801336;
 
   --font-main: 'Lato', sans-serif;
   --font-display: 'Bangers', cursive;
+
+  --transition-main: all 0.3s;
 }
 
 html {
@@ -46,4 +48,36 @@ body {
     background-clip: text;
     margin-bottom: 3rem;
   }
+}
+
+.section-error {
+  text-align: center;
+}
+
+.btn:visited,
+.btn:link {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  display: inline-block;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  transition: var(--transition-main);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  filter: brightness(80%);
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+
+.btn-primary {
+  background-color: var(--color-green);
+  color: #fff;
 }
