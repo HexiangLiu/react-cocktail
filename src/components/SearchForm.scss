@@ -6,16 +6,21 @@
   margin: 0 auto;
   text-transform: capitalize;
   margin-bottom: 5rem;
-  color: transparent;
+
   font-family: var(--font-subtitle);
-  background-image: linear-gradient(
-    to right,
-    var(--color-yellow),
-    var(--color-yellow-2)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-align: center;
+
+  &__label {
+    color: transparent;
+    letter-spacing: 0.2rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+    background-image: linear-gradient(
+      to right,
+      var(--color-yellow),
+      var(--color-yellow-2)
+    );
+  }
 
   @media screen and (max-width: 50em) {
     width: 80%;
