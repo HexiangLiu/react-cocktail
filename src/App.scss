@@ -21,6 +21,14 @@
 
 html {
   font-size: 62.5%;
+
+  @media screen and (max-width: 50em) {
+    font-size: 56.25%;
+  }
+
+  @media screen and (max-width: 37.5em) {
+    font-size: 50%;
+  }
 }
 
 * {
@@ -46,6 +54,14 @@ body {
     var(--color-green),
     var(--color-pink-1)
   );
+
+  @media screen and (max-width: 50em) {
+    padding: 12rem 8rem;
+  }
+
+  @media screen and (max-width: 37.5em) {
+    padding: 10rem 6rem;
+  }
 
   &__title {
     text-transform: capitalize;

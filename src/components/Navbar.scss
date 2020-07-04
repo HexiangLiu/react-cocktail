@@ -1,5 +1,6 @@
 .nav {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-around;
   font-size: 2rem;
@@ -8,14 +9,54 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(#eeeeee, 0.8);
-
+  background-color: rgba(#eee, 0.3);
   padding: 1rem 0;
   border-bottom: 2px solid var(--color-dark);
   font-weight: 600;
 
+  @media screen and (max-width: 50em) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  &__brand {
+    width: 80%;
+    @media screen and (max-width: 50em) {
+      width: 60%;
+    }
+  }
+
+  &__toggle {
+    font-size: 3rem;
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    transition: var(--transition-main);
+
+    &:active {
+      transform: translateY(2px);
+    }
+
+    @media screen and (max-width: 50em) {
+      display: inline-block;
+    }
+  }
+
   &__items {
-    display: flex;
+    transition: var(--transition-main);
+
+    @media screen and (max-width: 50em) {
+      display: inline-block;
+      height: 0;
+      overflow: hidden;
+    }
+
+    @media screen and (min-width: 50em) {
+      height: 100% !important;
+      display: flex;
+    }
   }
 
   &__item {
@@ -27,5 +68,14 @@
   &__link:link {
     text-decoration: none;
     color: var(--color-dark);
+    display: inline-block;
   }
+}
+
+#show {
+  display: none;
+}
+
+#show:checked + .nav__items {
+  height: 6rem;
 }
