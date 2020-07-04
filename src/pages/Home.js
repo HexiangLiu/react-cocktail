@@ -13,6 +13,7 @@ const Home = () => {
   const [cocktails, setCocktails] = useState([]);
 
   useEffect(() => {
+    setLoading(true);
     async function getDrinks() {
       try {
         const response = await axios.get(`/search.php?s=${searchTerm}`);
@@ -27,7 +28,7 @@ const Home = () => {
               strAlcoholic,
               strGlass,
             } = drink;
-            console.log(drink);
+
             return {
               id: idDrink,
               name: strDrink,

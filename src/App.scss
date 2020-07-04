@@ -8,7 +8,7 @@
   --color-red-2: #801336;
   --color-yellow: #ffd933;
   --color-yellow-1: #f59d2a;
-  --color-yellow-2: ##ff7517;
+  --color-yellow-2: #ff7517;
   --color-pink: #f49393;
   --color-pink-1: #f21368;
 
@@ -26,6 +26,7 @@ html {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
 }
 
 body {
@@ -38,7 +39,7 @@ body {
 }
 
 .section {
-  padding: 12rem 8rem;
+  padding: 12rem 12rem;
   min-height: 100vh;
   background-image: linear-gradient(
     to right bottom,
@@ -67,7 +68,7 @@ body {
   text-align: center;
 }
 
-.section-cocktail {
+.section-error {
   text-align: center;
 }
 
