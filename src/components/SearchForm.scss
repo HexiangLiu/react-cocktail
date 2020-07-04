@@ -14,6 +14,7 @@
     var(--color-yellow-2)
   );
   background-clip: text;
+  -webkit-background-clip: text;
   text-align: center;
 
   @media screen and (max-width: 50em) {
